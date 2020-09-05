@@ -1,0 +1,35 @@
+type User @model {
+    id: ID!
+    name: String!
+}
+
+type InviteSender 
+    @model
+    @key(fields: ["senderId", "receiverId"]){
+    senderId: String!
+    receiverId: String!
+    userInfo: User @connection
+}
+
+type InviteReceiver
+    @model
+    @key(fields: ["receiverId", "senderId"]){
+    senderId: String!
+    receiverId: String!
+    userInfo: User @connection
+    metadata: Metadata
+}
+
+type Metadata {
+    status: InviteStatus
+}
+
+enum InviteStatus { PENDING ACCEPTED }
+
+type Friend 
+    @model
+    @key(fields: ["userId", "friendUserId"]){
+    userId: String!
+    friendUserId: String!
+    userInfo: User @connection
+}

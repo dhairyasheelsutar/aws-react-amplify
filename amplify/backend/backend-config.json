@@ -1,6 +1,6 @@
 {
   "auth": {
-    "amplifyreactd550d2df": {
+    "amplifyreactbd66c9d4": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": []
@@ -15,7 +15,7 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authamplifyreactd550d2df"
+              "userPoolId": "authamplifyreactbd66c9d4"
             }
           },
           "additionalAuthenticationProviders": []

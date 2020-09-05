@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const userId = window.location.href.split("?")[1].split("=")[1];
+
   return (
     <div className="App">
       <header className="App-header">

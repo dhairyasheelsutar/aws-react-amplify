@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "amplifyreactd550d2df_identitypool_d550d2df",
+    "identityPoolName": "amplifyreactbd66c9d4_identitypool_bd66c9d4",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "amplifd550d2df",
-    "userPoolName": "amplifyreactd550d2df_userpool_d550d2df",
+    "resourceNameTruncated": "amplifbd66c9d4",
+    "userPoolName": "amplifyreactbd66c9d4_userpool_bd66c9d4",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "amplifd550d2df_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "amplifbd66c9d4_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "d550d2df",
-    "resourceName": "amplifyreactd550d2df",
+    "sharedId": "bd66c9d4",
+    "resourceName": "amplifyreactbd66c9d4",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -45,10 +45,15 @@
             "Arn"
         ]
     },
-    "useDefault": "default",
+    "useDefault": "defaultSocial",
+    "hostedUI": true,
     "usernameAttributes": [
         "email"
     ],
+    "hostedUIDomainName": "amplifyreactbd66c9d4-bd66c9d4",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/signin/\"],\"LogoutURLs\":[\"http://localhost:3000/signout/\"]}",
     "userPoolGroupList": [],
     "dependsOn": []
 }
